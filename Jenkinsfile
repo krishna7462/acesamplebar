@@ -24,7 +24,7 @@ pipeline {
 
         stage('Deploy to Local ACE') {
             steps {
-                sh 'mqsideploy -i 192.168.0.122 -p 4414 -e MyNodeOwnedServer -a /var/lib/jenkins/workspace/sample2/Digital.bar'
+                sh 'mqsideploy -i 192.168.0.122 -p 4414 -e MyNodeOwnedServer -a /Digital.bar'
             }
         }
     }
